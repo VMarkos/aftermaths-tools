@@ -1,0 +1,138 @@
+:root {
+    --main-background-color-light: #eeeeff;
+    --secondary-background-color-light: #dfdfff;
+    --main-color-light: #5050aa;
+    --main-highlight-color: #cdcdee;
+    --main-text-color-light: #eeeeee;
+    --secodary-text-color-light: #202020;
+    --main-shadow-color: rgba(0, 0, 0, 0.7);
+    --secondary-shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: var(--main-background-color-light);
+    color: var(--main-text-color-light);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 22pt;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--main-color-light);
+    box-shadow: 0px 2px 4px 0px var(--main-shadow-color);
+    position: sticky;
+}
+
+.navbar-centering {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+}
+
+.navbar-entry {
+    cursor: pointer;
+}
+
+.navbar-entry > a {
+    color: var(--main-text-color-light);
+    text-decoration: none;
+}
+
+.navbar-entry.aftermaths {
+    font-weight: 400;
+}
+
+.navbar-entry.aftermaths > a {
+    color: var(--main-text-color-light);
+}
+
+/* Main body */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.main-centering {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.tool-card-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 320px;
+    background-color: var(--secondary-background-color-light);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 0px var(--secondary-shadow-color);
+    gap: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--secodary-text-color-light);
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.tool-card-container:hover {
+    background-color: var(--main-highlight-color);
+}
+
+.tool-card-container p, .tool-card-container p {
+    margin: 0;
+    padding: 0;
+}
+
+.tool-card-container a {
+    color: var(--secondary-text-color-light);
+}
+
+.tool-card-container > h2 > a {
+    text-decoration: none;
+}
+
+.tool-card-container > h2 > a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.tool-card-title {
+    font-size: 18pt;
+    font-weight: 600;
+}
+
+.tool-card-text {
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+.specs-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 5px;
+}
+
+.tool-card-specs {
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+.tool-card-container > p > a {
+    position: relative;
+    /* text-decoration: underline; */
+}
